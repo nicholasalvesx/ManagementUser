@@ -7,8 +7,14 @@ namespace ManagementUser.WebApp.Data
     {
         public IdentityAppDbContext CreateDbContext(string[] args)
         {
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+
             var optionsBuilder = new DbContextOptionsBuilder<IdentityAppDbContext>();
-            optionsBuilder.UseSqlServer("DefaultConnection");
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            optionsBuilder.UseSqlServer(connectionString);
 
             return new IdentityAppDbContext(optionsBuilder.Options);
         }
