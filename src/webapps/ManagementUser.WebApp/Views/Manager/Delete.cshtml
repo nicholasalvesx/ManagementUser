@@ -1,0 +1,18 @@
+@model Microsoft.AspNetCore.Identity.IdentityUser<Guid>
+
+@{
+    ViewData["Title"] = "Deletar Usuário";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-danger">Deletar Usuário</h2>
+    <p class="text-center">Tem certeza de que deseja excluir o usuário <strong>@Model.UserName</strong>?</p>
+
+    <form asp-controller="Manager" asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+        <a  asp-controller="Home" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

@@ -1,13 +1,11 @@
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
-  color: #333;
+  color: #0007cc;
   margin: 0;
   padding: 0;
 }
 
-/* Navbar */
 .navbar {
   background-color: #0077cc;
   padding: 10px 20px;
@@ -17,7 +15,6 @@ body {
   font-weight: bold;
 }
 
-/* Buttons */
 .btn-primary {
   background-color: #1b6ec2;
   border-color: #1861ac;
@@ -25,14 +22,12 @@ body {
   border-radius: 5px;
 }
 
-/* Layout */
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
 
-/* User Management */
 .user-list {
   background: white;
   padding: 20px;
@@ -40,7 +35,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 15px;

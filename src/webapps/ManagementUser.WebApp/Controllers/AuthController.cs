@@ -21,21 +21,25 @@ public class AuthController : Controller
     {
         return View();
     }
-
+   
     [HttpPost("login")]
     public async Task<IActionResult> Login(User model)
     {
         if (!ModelState.IsValid)
             return View(model);
 
-        if (model.UserName != null)
+        if (model.Email != null)
         {
-            if (model.Password != null)
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user is { UserName: not null })
             {
-                var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
+                if (model.Password != null)
+                {
+                    var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, false, false);
 
-                if (result.Succeeded)
-                    return RedirectToAction("Index", "Home");
+                    if (result.Succeeded)
+                        return RedirectToAction("Index", "Home");
+                }
             }
         }
 
@@ -55,18 +59,27 @@ public class AuthController : Controller
         if (!ModelState.IsValid)
             return View();
 
-        var user = new IdentityUser<Guid> { UserName = model.UserName, Email = model.Email };
-        var result = await _userManager.CreateAsync(user, model.Password);
-
-        if (result.Succeeded)
+        var user = new IdentityUser<Guid>
         {
-            await _signInManager.SignInAsync(user, isPersistent: false);
-            return RedirectToAction("Login", "Auth"); 
-        }
+            UserName = model.Email.Split('@')[0],
+            Email = model.Email
+        };
 
-        foreach (var error in result.Errors)
-            ModelState.AddModelError(string.Empty, error.Description);
+        if (model.Password != null)
+        {
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+            if (result.Succeeded)
+            {
+                await _signInManager.SignInAsync(user, isPersistent: false);
+                return RedirectToAction("Login", "Auth"); 
+            }
+
+            foreach (var error in result.Errors)
+                ModelState.AddModelError(string.Empty, error.Description);
+        }
 
         return View(model);
     }
+
 }

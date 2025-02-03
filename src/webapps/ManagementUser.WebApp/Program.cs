@@ -17,7 +17,6 @@ builder.Services.AddIdentity<IdentityUser<Guid>, IdentityRole<Guid>>(opt =>
     {
         opt.Lockout.MaxFailedAccessAttempts = 5;
         opt.SignIn.RequireConfirmedPhoneNumber = false;
-        opt.SignIn.RequireConfirmedEmail = true;
         opt.User.RequireUniqueEmail = true;
         opt.Password.RequireDigit = true;
         opt.Password.RequiredLength = 6;
@@ -49,7 +48,7 @@ else
 {
     app.UseDeveloperExceptionPage();
 
-    app.UseHttpsRedirection();
+    //app.UseHttpsRedirection();
     app.UseStaticFiles();
 
     app.UseSession();
@@ -59,19 +58,32 @@ else
     app.UseAuthentication();
     app.UseAuthorization();
 
-    app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Auth}/{action=Register}/{id?}");
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapGet("/", context =>
+        {
+            context.Response.Redirect("/auth/register");
+            return Task.CompletedTask;
+        });
 
-    app.MapControllerRoute(
-        name: "auth",
-        pattern: "auth/{action=Login}",
-        defaults: new { controller = "Auth" });
+        endpoints.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Auth}/{action=Register}/{id?}");
 
-    app.MapControllerRoute(
-        name: "user-management",
-        pattern: "users/{action=Index}",
-        defaults: new { controller = "UserManagement" });
+        endpoints.MapControllerRoute(
+            name: "auth",
+            pattern: "auth/{action=Login}",
+            defaults: new { controller = "Auth" });
+
+        endpoints.MapControllerRoute(
+            name: "manager",
+            pattern: "manager/{action=edit}",
+            defaults: new { controller = "Manager" });
+
+        endpoints.MapRazorPages();
+    });
+    
+    app.MapDefaultControllerRoute();
 
     app.MapRazorPages();
     app.Run();
