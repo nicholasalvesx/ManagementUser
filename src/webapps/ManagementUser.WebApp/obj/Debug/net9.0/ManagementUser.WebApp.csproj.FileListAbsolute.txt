@@ -248,9 +248,7 @@
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/ManagementUser.WebApp.MvcApplicationPartsAssemblyInfo.cache
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/ManagementUser.WebApp.RazorAssemblyInfo.cache
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/ManagementUser.WebApp.RazorAssemblyInfo.cs
-/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/ManagementUser.WebApp.styles.css
-/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ofa40bqe71-b9sayid5wm.gz
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/j9swiz3yzq-90yqlj465b.gz
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/vltxs1u3vm-xtxxf3hu2r.gz
@@ -374,8 +372,6 @@
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/lfny1mbv90-muycvpuwrr.gz
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/0j8npb44o0-87fc7y1x7t.gz
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/iz2cg1lwja-jfsiqqwiad.gz
-/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/hqk0idykgi-m0rh88bx6x.gz
-/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/uanl4ulekl-m0rh88bx6x.gz
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/staticwebassets.build.json
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/staticwebassets.development.json
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -392,4 +388,4 @@
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/ManagementUser.WebApp.genruntimeconfig.cache
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/ref/ManagementUser.WebApp.dll
 /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/ManagementUser.WebApp.sourcelink.json
-/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-fd7ph3ps93.gz
+/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-vymc0qrtkb.gz

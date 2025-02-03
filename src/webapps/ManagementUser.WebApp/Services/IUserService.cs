@@ -1,8 +1,8 @@
-using ManagementUser.WebApp.ViewsModels;
+using ManagementUser.WebApp.Models;
 
 namespace ManagementUser.WebApp.Services;
 
 public interface IUserService
 {
-    Task<List<UserViewModel>> GetAllUsersAsync();
+    Task<List<User>> GetAllUsersAsync();
 }

@@ -1,22 +1,21 @@
-using ManagementUser.WebApp.ViewsModels;
+using ManagementUser.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace ManagementUser.WebApp.Controllers;
 
-public class UserManagementController(UserManager<IdentityUser<Guid>> userManager) : Controller
+public class UserManagementController : Controller
 {
-    public async Task<IActionResult> Index()
+    private readonly UserManager<IdentityUser<Guid>> _userManager;
+
+    public UserManagementController(UserManager<IdentityUser<Guid>> userManager)
     {
-        var users = userManager.Users.ToList();
-        
-        var userViewModels = users.Select(u => new UserViewModel
-        {
-            Id = u.Id,
-            UserName = u.UserName,
-            Email = u.Email
-        }).ToList();
-        
-        return View(userViewModels);
+        _userManager = userManager;
+    }
+
+    public async Task Index()
+    {
+        await _userManager.Users.ToListAsync();
     }
 }

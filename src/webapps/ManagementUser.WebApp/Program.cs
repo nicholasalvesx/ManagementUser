@@ -1,28 +1,34 @@
 using ManagementUser.WebApp.Data;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+/*var factory = new IdentityAppDbContextFactory();
+using (var context = factory.CreateDbContext(args))
+{
+    context.Database.Migrate();
+}*/
 
 builder.Services.AddDbContext<IdentityAppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddIdentity<IdentityUser<Guid>, IdentityRole<Guid>>(opt =>
     {
-        opt.Lockout.MaxFailedAccessAttempts = 50;
+        opt.Lockout.MaxFailedAccessAttempts = 5;
         opt.SignIn.RequireConfirmedPhoneNumber = false;
         opt.SignIn.RequireConfirmedEmail = true;
         opt.User.RequireUniqueEmail = true;
-        opt.Password.RequireDigit = false;
-        opt.Password.RequiredLength = 4;
-        opt.Password.RequireNonAlphanumeric = false;
-        opt.Password.RequireUppercase = false;
-        opt.Password.RequireLowercase = false;
+        opt.Password.RequireDigit = true;
+        opt.Password.RequiredLength = 6;
+        opt.Password.RequireNonAlphanumeric = true;
+        opt.Password.RequireUppercase = true;
+        opt.Password.RequireLowercase = true;
     })
     .AddEntityFrameworkStores<IdentityAppDbContext>()
-    .AddUserStore<UserStore<IdentityUser<Guid>, IdentityRole<Guid>, IdentityAppDbContext, Guid>>()
-    .AddRoleStore<RoleStore<IdentityRole<Guid>, IdentityAppDbContext, Guid>>()
+    .AddUserManager<UserManager<IdentityUser<Guid>>>()
+    .AddRoleManager<RoleManager<IdentityRole<Guid>>>()
+    .AddSignInManager<SignInManager<IdentityUser<Guid>>>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddSession();
@@ -39,23 +45,34 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+else
+{
+    app.UseDeveloperExceptionPage();
 
-app.MapStaticAssets();
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
 
-app.UseHttpsRedirection();
+    app.UseSession();
 
-app.UseCookiePolicy();
+    app.UseRouting();
 
-app.UseRouting();
+    app.UseAuthentication();
+    app.UseAuthorization();
 
-app.UseAuthentication();
-app.UseAuthorization();
-
-app.UseSession();
-
-app.MapControllerRoute(
+    app.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+        pattern: "{controller=Auth}/{action=Register}/{id?}");
 
-app.Run();
+    app.MapControllerRoute(
+        name: "auth",
+        pattern: "auth/{action=Login}",
+        defaults: new { controller = "Auth" });
+
+    app.MapControllerRoute(
+        name: "user-management",
+        pattern: "users/{action=Index}",
+        defaults: new { controller = "UserManagement" });
+
+    app.MapRazorPages();
+    app.Run();
+}

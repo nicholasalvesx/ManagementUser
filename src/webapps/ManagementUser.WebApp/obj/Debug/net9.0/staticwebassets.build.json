@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gMO0gphVdvfrHbrN7cOCDbEf6jg3lKLfh3a8cuqnl1o=",
+  "Hash": "gGYnhb+48NYgvXrh+fRiVr6PPDIp6MGnthqP+VxoERI=",
   "Source": "ManagementUser.WebApp",
   "BasePath": "_content/ManagementUser.WebApp",
   "Mode": "Default",
@@ -2390,27 +2390,6 @@
       "OriginalItemSpec": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/hqk0idykgi-m0rh88bx6x.gz",
-      "SourceId": "ManagementUser.WebApp",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/",
-      "BasePath": "_content/ManagementUser.WebApp",
-      "RelativePath": "ManagementUser.WebApp#[.{fingerprint=m0rh88bx6x}]?.styles.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/ManagementUser.WebApp.styles.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "eke5xs78qe",
-      "Integrity": "/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/ManagementUser.WebApp.styles.css"
-    },
-    {
       "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/iggevs7xvy-d7shbmvgxk.gz",
       "SourceId": "ManagementUser.WebApp",
       "SourceType": "Discovered",
@@ -2936,12 +2915,12 @@
       "OriginalItemSpec": "/home/nicholas/.nuget/packages/microsoft.aspnetcore.identity.ui/9.0.1/staticwebassets/V5/css/site.css"
     },
     {
-      "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-fd7ph3ps93.gz",
+      "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-vymc0qrtkb.gz",
       "SourceId": "ManagementUser.WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/ManagementUser.WebApp",
-      "RelativePath": "css/site#[.{fingerprint=fd7ph3ps93}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=vymc0qrtkb}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2950,8 +2929,8 @@
       "RelatedAsset": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "y3rjk5dlmv",
-      "Integrity": "Ahj7vhZTzLiKflSPTeZl+3jb5Zjfo+GmgzrsScmQ3jM=",
+      "Fingerprint": "hy3pa1x3r1",
+      "Integrity": "t2HoM96Fkx2uYazOX1symrvvfquyRq3+1nbsbyIGpLw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/wwwroot/css/site.css"
@@ -3417,27 +3396,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/nicholas/.nuget/packages/microsoft.aspnetcore.identity.ui/9.0.1/staticwebassets/V5/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
-    },
-    {
-      "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/uanl4ulekl-m0rh88bx6x.gz",
-      "SourceId": "ManagementUser.WebApp",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/",
-      "BasePath": "_content/ManagementUser.WebApp",
-      "RelativePath": "ManagementUser.WebApp#[.{fingerprint=m0rh88bx6x}]!.bundle.scp.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "eke5xs78qe",
-      "Integrity": "/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css"
     },
     {
       "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ufp52hd322-fvhpjtyr6v.gz",
@@ -3986,48 +3944,6 @@
       "OriginalItemSpec": "/home/nicholas/.nuget/packages/microsoft.aspnetcore.identity.ui/9.0.1/staticwebassets/V5/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/ManagementUser.WebApp.styles.css",
-      "SourceId": "ManagementUser.WebApp",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/",
-      "BasePath": "_content/ManagementUser.WebApp",
-      "RelativePath": "ManagementUser.WebApp#[.{fingerprint}]?.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "m0rh88bx6x",
-      "Integrity": "+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/ManagementUser.WebApp.styles.css"
-    },
-    {
-      "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css",
-      "SourceId": "ManagementUser.WebApp",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/",
-      "BasePath": "_content/ManagementUser.WebApp",
-      "RelativePath": "ManagementUser.WebApp#[.{fingerprint}]!.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "m0rh88bx6x",
-      "Integrity": "+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css"
-    },
-    {
       "Identity": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/wwwroot/css/site.css",
       "SourceId": "ManagementUser.WebApp",
       "SourceType": "Discovered",
@@ -4042,8 +3958,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fd7ph3ps93",
-      "Integrity": "beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0=",
+      "Fingerprint": "vymc0qrtkb",
+      "Integrity": "uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -5391,12 +5307,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-fd7ph3ps93.gz",
+      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-vymc0qrtkb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003194888179"
+          "Quality": "0.002590673575"
         }
       ],
       "ResponseHeaders": [
@@ -5406,15 +5322,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "385"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ahj7vhZTzLiKflSPTeZl+3jb5Zjfo+GmgzrsScmQ3jM=\""
+          "Value": "\"t2HoM96Fkx2uYazOX1symrvvfquyRq3+1nbsbyIGpLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 20:10:28 GMT"
+          "Value": "Wed, 29 Jan 2025 12:27:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5434,13 +5350,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0=\""
+          "Value": "W/\"uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0="
+          "Value": "sha256-uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo="
         }
       ]
     },
@@ -5455,7 +5371,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "639"
+          "Value": "751"
         },
         {
           "Name": "Content-Type",
@@ -5463,11 +5379,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0=\""
+          "Value": "\"uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 20:10:28 GMT"
+          "Value": "Wed, 29 Jan 2025 12:27:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5477,13 +5393,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0="
+          "Value": "sha256-uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-fd7ph3ps93.gz",
+      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-vymc0qrtkb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5492,7 +5408,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "385"
         },
         {
           "Name": "Content-Type",
@@ -5500,11 +5416,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ahj7vhZTzLiKflSPTeZl+3jb5Zjfo+GmgzrsScmQ3jM=\""
+          "Value": "\"t2HoM96Fkx2uYazOX1symrvvfquyRq3+1nbsbyIGpLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 20:10:28 GMT"
+          "Value": "Wed, 29 Jan 2025 12:27:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5522,18 +5438,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ahj7vhZTzLiKflSPTeZl+3jb5Zjfo+GmgzrsScmQ3jM="
+          "Value": "sha256-t2HoM96Fkx2uYazOX1symrvvfquyRq3+1nbsbyIGpLw="
         }
       ]
     },
     {
-      "Route": "css/site.fd7ph3ps93.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-fd7ph3ps93.gz",
+      "Route": "css/site.vymc0qrtkb.css",
+      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-vymc0qrtkb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003194888179"
+          "Quality": "0.002590673575"
         }
       ],
       "ResponseHeaders": [
@@ -5543,15 +5459,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "385"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ahj7vhZTzLiKflSPTeZl+3jb5Zjfo+GmgzrsScmQ3jM=\""
+          "Value": "\"t2HoM96Fkx2uYazOX1symrvvfquyRq3+1nbsbyIGpLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 20:10:28 GMT"
+          "Value": "Wed, 29 Jan 2025 12:27:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5571,13 +5487,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0=\""
+          "Value": "W/\"uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fd7ph3ps93"
+          "Value": "vymc0qrtkb"
         },
         {
           "Name": "label",
@@ -5585,12 +5501,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0="
+          "Value": "sha256-uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo="
         }
       ]
     },
     {
-      "Route": "css/site.fd7ph3ps93.css",
+      "Route": "css/site.vymc0qrtkb.css",
       "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5600,7 +5516,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "639"
+          "Value": "751"
         },
         {
           "Name": "Content-Type",
@@ -5608,11 +5524,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0=\""
+          "Value": "\"uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 20:10:28 GMT"
+          "Value": "Wed, 29 Jan 2025 12:27:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5622,7 +5538,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fd7ph3ps93"
+          "Value": "vymc0qrtkb"
         },
         {
           "Name": "label",
@@ -5630,13 +5546,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-beH98OVEOBrxrcqkAxqaM09qvJPDcmQ7bhF39gk6Nm0="
+          "Value": "sha256-uWjujwnf5bHJRpo/YuFDRpg4CX3SKXG2HFvo7pXkqEo="
         }
       ]
     },
     {
-      "Route": "css/site.fd7ph3ps93.css.gz",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-fd7ph3ps93.gz",
+      "Route": "css/site.vymc0qrtkb.css.gz",
+      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/ouuz538xbm-vymc0qrtkb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5645,7 +5561,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "385"
         },
         {
           "Name": "Content-Type",
@@ -5653,11 +5569,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ahj7vhZTzLiKflSPTeZl+3jb5Zjfo+GmgzrsScmQ3jM=\""
+          "Value": "\"t2HoM96Fkx2uYazOX1symrvvfquyRq3+1nbsbyIGpLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 20:10:28 GMT"
+          "Value": "Wed, 29 Jan 2025 12:27:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5675,7 +5591,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fd7ph3ps93"
+          "Value": "vymc0qrtkb"
         },
         {
           "Name": "label",
@@ -5683,7 +5599,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ahj7vhZTzLiKflSPTeZl+3jb5Zjfo+GmgzrsScmQ3jM="
+          "Value": "sha256-t2HoM96Fkx2uYazOX1symrvvfquyRq3+1nbsbyIGpLw="
         }
       ]
     },
@@ -34769,602 +34685,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-3DFiegc2iKK88Ppo8dYwD8G8uooRYBWB1cSv6eWSkt4="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.bundle.scp.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/uanl4ulekl-m0rh88bx6x.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001848428835"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.bundle.scp.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1090"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.bundle.scp.css.gz",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/uanl4ulekl-m0rh88bx6x.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.m0rh88bx6x.bundle.scp.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/uanl4ulekl-m0rh88bx6x.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001848428835"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m0rh88bx6x"
-        },
-        {
-          "Name": "label",
-          "Value": "ManagementUser.WebApp.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.m0rh88bx6x.bundle.scp.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1090"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m0rh88bx6x"
-        },
-        {
-          "Name": "label",
-          "Value": "ManagementUser.WebApp.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.m0rh88bx6x.bundle.scp.css.gz",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/uanl4ulekl-m0rh88bx6x.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m0rh88bx6x"
-        },
-        {
-          "Name": "label",
-          "Value": "ManagementUser.WebApp.bundle.scp.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.m0rh88bx6x.styles.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/hqk0idykgi-m0rh88bx6x.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001848428835"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m0rh88bx6x"
-        },
-        {
-          "Name": "label",
-          "Value": "ManagementUser.WebApp.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.m0rh88bx6x.styles.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/ManagementUser.WebApp.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1090"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m0rh88bx6x"
-        },
-        {
-          "Name": "label",
-          "Value": "ManagementUser.WebApp.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.m0rh88bx6x.styles.css.gz",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/hqk0idykgi-m0rh88bx6x.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m0rh88bx6x"
-        },
-        {
-          "Name": "label",
-          "Value": "ManagementUser.WebApp.styles.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.styles.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/hqk0idykgi-m0rh88bx6x.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001848428835"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.styles.css",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/bundle/ManagementUser.WebApp.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1090"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+kQ7ky5mez7okxPMOQp1xfH4lpZcbi135oxZhOm/T74="
-        }
-      ]
-    },
-    {
-      "Route": "ManagementUser.WebApp.styles.css.gz",
-      "AssetFile": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/compressed/hqk0idykgi-m0rh88bx6x.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "540"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/vmId1/xJbQF9rBO77M9jxnLgNhFn/vrswJ8yg6VCtc="
         }
       ]
     }

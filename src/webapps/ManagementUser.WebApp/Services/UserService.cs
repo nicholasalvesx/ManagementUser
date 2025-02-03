@@ -1,4 +1,4 @@
-using ManagementUser.WebApp.ViewsModels;
+using ManagementUser.WebApp.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace ManagementUser.WebApp.Services;
@@ -12,10 +12,10 @@ public class UserService : IUserService
         _userManager = userManager;
     }
 
-    public async Task<List<UserViewModel>> GetAllUsersAsync()
+    public async Task<List<User>> GetAllUsersAsync()
     {
         var users = _userManager.Users.ToList();
-        return users.Select(user => new UserViewModel
+        return users.Select(user => new User
         {
             Id = new Guid(user.Id),
             UserName = user.UserName,

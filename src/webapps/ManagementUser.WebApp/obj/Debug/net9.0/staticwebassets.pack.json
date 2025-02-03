@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/ManagementUser.WebApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/ManagementUser.WebApp.m0rh88bx6x.bundle.scp.css"
-    },
-    {
       "Id": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
