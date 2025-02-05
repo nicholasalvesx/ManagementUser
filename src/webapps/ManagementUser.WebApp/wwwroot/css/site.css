@@ -42,3 +42,17 @@ body {
   color: white;
   margin-top: 20px;
 }
+
+.btn-button{
+  background-color: #1b6ec2;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;            
+  transition: background 0.3s ease-in-out;                              
+  border: none;                                                                                     
+}
+.btn-button:hover{
+  background-color: #1b6ec2;
+}

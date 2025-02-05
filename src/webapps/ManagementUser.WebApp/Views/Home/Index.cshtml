@@ -4,20 +4,25 @@
     ViewData["Title"] = "Gerenciamento de Usuários";
     Layout = "_Layout";
 }
-<div class="d-flex" id="wrapper">
-
-    <div class="bg-primary text-white sidebar">
-        <h3 class="text-center py-3">Admin Panel</h3>
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a asp-controller="Manager" asp-action="Edit" class="nav-link text-white">Editar usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a asp-controller="Manager" asp-action="Delete" class="nav-link text-white">Deletar usuarios</a>
-            </li>
-        </ul>
-    </div>
     
+
+
+<div class="d-flex" id="wrapper">
+    
+    @if (User.IsInRole("UserAdmin"))
+    {
+        <div class="bg-primary text-white sidebar">
+            <h3 class="text-center py-3">Painel de adm</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a asp-controller="Manager" asp-action="Edit" class="nav-link text-white">Editar usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Manager" asp-action="Delete" class="nav-link text-white">Deletar usuarios</a>
+                </li>
+            </ul>
+        </div>
+    }
     <div class="container mt-5">
         <h1 class="display-4 text-center">@ViewData["Title"]</h1>
         <p class="text-center">Veja a lista de usuários cadastrados no sistema.</p>
@@ -50,6 +55,11 @@
         {
             <p class="text-center text-muted mt-4">Nenhum usuário encontrado.</p>
         }
+        
+        <form asp-controller="Auth" asp-action="Logout"  method="post">
+            <button id="logoutSubmit" type="submit" class="btn-button">Logout</button>
+        </form>
+        
     </div>
 </div>
 

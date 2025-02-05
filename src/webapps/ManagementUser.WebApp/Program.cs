@@ -1,4 +1,6 @@
 using ManagementUser.WebApp.Data;
+using ManagementUser.WebApp.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,12 +32,27 @@ builder.Services.AddIdentity<IdentityUser<Guid>, IdentityRole<Guid>>(opt =>
     .AddSignInManager<SignInManager<IdentityUser<Guid>>>()
     .AddDefaultTokenProviders();
 
+builder.Services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.ApplicationScheme,
+    opt =>
+    {
+        opt.LoginPath = new PathString("/auth/login");
+        opt.AccessDeniedPath = new PathString("/acesso-negado");
+    });
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(o => {
+        o.LoginPath = new PathString("/auth/login");
+        o.AccessDeniedPath = new PathString("/acesso-negado");
+    });
+
 builder.Services.AddSession();
 
 builder.Services.AddControllersWithViews()
     .AddSessionStateTempDataProvider();
 builder.Services.AddRazorPages()
     .AddSessionStateTempDataProvider();
+
+builder.Services.AddSingleton<IHostedService, RoleWorker>();
 
 var app = builder.Build();
 
@@ -77,7 +94,7 @@ else
 
         endpoints.MapControllerRoute(
             name: "manager",
-            pattern: "manager/{action=edit}",
+            pattern: "manager/{action=index}",
             defaults: new { controller = "Manager" });
 
         endpoints.MapRazorPages();

@@ -1,10 +1,11 @@
-using ManagementUser.WebApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace ManagementUser.WebApp.Controllers;
 
+[Route("manager")]
 public class ManagerController : Controller
 {
     private readonly UserManager<IdentityUser<Guid>> _userManager;
@@ -14,11 +15,13 @@ public class ManagerController : Controller
         _userManager = userManager;
     }
 
-    public async Task Index()
+    public async Task<IActionResult> Index()
     {
-        await _userManager.Users.ToListAsync();
+        var users = await _userManager.Users.ToListAsync();
+        return View("Index", users);
     }
 
+    [Authorize(Roles = "UserAdmin")]
     [HttpGet("edit/{id}")]
     public async Task<IActionResult> Edit(Guid id)
     {
@@ -28,12 +31,19 @@ public class ManagerController : Controller
             return NotFound();
         }
 
-        return View();
+        return View("Edit", user);
     }
 
+    [Authorize(Roles = "UserAdmin")]
     [HttpPost("edit")]
-    public async Task<IActionResult> Edit(User model)
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit([FromForm] IdentityUser<Guid> model)
     {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest("Dados inválidos.");
+        }
+
         var user = await _userManager.FindByIdAsync(model.Id.ToString());
         if (user == null)
         {
@@ -50,9 +60,10 @@ public class ManagerController : Controller
         }
 
         ModelState.AddModelError(string.Empty, "Erro ao atualizar o usuário.");
-        return View("/Views/Manager/Edit");
+        return View("Edit", model);
     }
-    
+
+    [Authorize(Roles = "UserAdmin")]
     [HttpGet("delete/{id}")]
     public async Task<IActionResult> Delete(Guid id)
     {
@@ -61,11 +72,14 @@ public class ManagerController : Controller
         {
             return NotFound();
         }
-        return View();
+
+        return View("Delete", user);
     }
 
-    [HttpPost("delete")]
-    public async Task<IActionResult> DeleteConfirmed(Guid id)
+    [Authorize(Roles = "UserAdmin")]
+    [HttpPost("delete/{id}")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteConfirmed(Guid id) 
     {
         var user = await _userManager.FindByIdAsync(id.ToString());
         if (user == null)
@@ -80,7 +94,6 @@ public class ManagerController : Controller
         }
 
         ModelState.AddModelError(string.Empty, "Erro ao excluir o usuário.");
-        return View("/Views/Manager/Delete");
+        return View("Delete", user);
     }
-
 }

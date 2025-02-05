@@ -8,19 +8,10 @@
 <div class="container mt-5">
     <h2 class="text-center">Editar Usuário</h2>
     <form asp-controller="Manager" asp-action="Edit" method="post">
-        <input type="hidden" asp-for="Id" />
-
-        <div class="mb-3">
-            <label for="UserName" class="form-label">Nome de Usuário</label>
-            <input type="text" class="form-control" asp-for="UserName" required />
-        </div>
-
-        <div class="mb-3">
-            <label for="Email" class="form-label">Email</label>
-            <input type="email" class="form-control" asp-for="Email" required />
-        </div>
-
-        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
-        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="text" name="UserName" value="@Model.UserName" required />
+        <input type="email" name="Email" value="@Model.Email" required />
+        <button type="submit">Salvar</button>
     </form>
 </div>
