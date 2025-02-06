@@ -11,7 +11,6 @@ public class UserService : IUserService
     {
         _userManager = userManager;
     }
-
     public async Task<List<User>> GetAllUsersAsync()
     {
         var users = _userManager.Users.ToList();
