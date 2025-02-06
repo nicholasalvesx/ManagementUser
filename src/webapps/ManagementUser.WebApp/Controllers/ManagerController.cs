@@ -15,8 +15,7 @@ public class ManagerController : Controller
     {
         _userManager = userManager;
     }
-
-    [Authorize(Roles = "Admin")]
+    
     [HttpGet("index")]
     public IActionResult Index()
     {
@@ -70,14 +69,12 @@ public class ManagerController : Controller
         return RedirectToAction("Index");
     }
 
-    [Authorize(Roles = "Admin")]
     [HttpGet("create")]
     public IActionResult Create()
     {
         return View();
     }
-    
-    [Authorize(Roles = "Admin")]
+   
     [HttpPost("create")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(User model)
@@ -89,7 +86,7 @@ public class ManagerController : Controller
         var user = new IdentityUser<Guid>
         {
             UserName = model.UserName,
-            Email = model.Email,
+            Email = model.Email, 
             EmailConfirmed = true
         };
         var result = await _userManager.CreateAsync(user, model.Password);
