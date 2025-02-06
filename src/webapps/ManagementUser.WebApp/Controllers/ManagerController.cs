@@ -1,3 +1,4 @@
+using ManagementUser.WebApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -67,5 +68,41 @@ public class ManagerController : Controller
             await _userManager.DeleteAsync(user);
         }
         return RedirectToAction("Index");
+    }
+
+    [Authorize(Roles = "Admin")]
+    [HttpGet("create")]
+    public IActionResult Create()
+    {
+        return View();
+    }
+    
+    [Authorize(Roles = "Admin")]
+    [HttpPost("create")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create(User model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View(model);
+        }
+        var user = new IdentityUser<Guid>
+        {
+            UserName = model.UserName,
+            Email = model.Email,
+            EmailConfirmed = true
+        };
+        var result = await _userManager.CreateAsync(user, model.Password);
+        if (result.Succeeded)
+        {
+            await _userManager.AddToRoleAsync(user, "User");
+            return RedirectToAction("Index");
+        }
+
+        foreach (var error in result.Errors)
+        {
+            ModelState.AddModelError(string.Empty, error.Description);
+        }
+        return View(model);
     }
 }
