@@ -1,0 +1,57 @@
+@model List<Microsoft.AspNetCore.Identity.IdentityUser<Guid>>
+
+@{
+    ViewData["Title"] = "Gerenciamento de Usuários";
+    Layout = "_Layout";
+}
+
+@if (User.IsInRole("Admin"))
+{
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Lista de Usuários</h4>
+            </div>
+            <div class="card-body">
+                @if (Model != null && Model.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-primary">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome de Usuário</th>
+                                <th>Email</th>
+                                <th class="text-center">Ações</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var user in Model)
+                            {
+                                <tr>
+                                    <td>@user.Id</td>
+                                    <td>@user.UserName</td>
+                                    <td>@user.Email</td>
+                                    <td class="text-center">
+                                        <a asp-controller="Manager" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-warning me-2">Editar</a>
+                                        <form asp-controller="Manager" asp-action="Delete" asp-route-id="@user.Id" method="post" class="d-inline">
+                                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+
+                }
+                else
+                {
+                    <p class="text-muted text-center">Nenhum usuário encontrado.</p>
+                }
+            </div>
+        </div>
+    </div>
+}

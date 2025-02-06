@@ -81,7 +81,6 @@ public class AuthController : Controller
 
         return View(model);
     }
-
     public async Task<IActionResult> Logout()
     {
         await _signInManager.SignOutAsync();

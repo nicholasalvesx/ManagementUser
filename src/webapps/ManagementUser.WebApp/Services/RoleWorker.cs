@@ -21,7 +21,7 @@ namespace ManagementUser.WebApp.Services
             var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser<Guid>>>();
 
-            string[] roles = { "UserAdmin", "User" };
+            string[] roles = { "Admin", "User" };
 
             foreach (var role in roles)
             {
@@ -37,7 +37,7 @@ namespace ManagementUser.WebApp.Services
             {
                 var user = new IdentityUser<Guid>
                 {
-                    UserName = "UserAdmin",
+                    UserName = "Admin",
                     Email = adminEmail,
                     EmailConfirmed = true
                 };
@@ -46,7 +46,7 @@ namespace ManagementUser.WebApp.Services
                 if (result.Succeeded)
                 {
                     _logger.LogInformation($"Criando usuário: {adminEmail}");
-                    await userManager.AddToRoleAsync(user, "UserAdmin");
+                    await userManager.AddToRoleAsync(user, "Admin");
                 }
             }
 

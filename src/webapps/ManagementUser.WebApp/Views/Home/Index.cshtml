@@ -4,21 +4,17 @@
     ViewData["Title"] = "Gerenciamento de Usuários";
     Layout = "_Layout";
 }
-    
-
 
 <div class="d-flex" id="wrapper">
     
-    @if (User.IsInRole("UserAdmin"))
+    @if (User.IsInRole("Admin"))
     {
         <div class="bg-primary text-white sidebar">
             <h3 class="text-center py-3">Painel de adm</h3>
             <ul class="nav flex-column">
+                
                 <li class="nav-item">
-                    <a asp-controller="Manager" asp-action="Edit" class="nav-link text-white">Editar usuarios</a>
-                </li>
-                <li class="nav-item">
-                    <a asp-controller="Manager" asp-action="Delete" class="nav-link text-white">Deletar usuarios</a>
+                    <a asp-controller="Manager" asp-action="Index" class="nav-link text-white">Ações de edição e exclusão de usuarios</a>
                 </li>
             </ul>
         </div>

@@ -36,13 +36,13 @@ builder.Services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.Ap
     opt =>
     {
         opt.LoginPath = new PathString("/auth/login");
-        opt.AccessDeniedPath = new PathString("/acesso-negado");
+        //opt.AccessDeniedPath = new PathString("/acesso-negado");
     });
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(o => {
         o.LoginPath = new PathString("/auth/login");
-        o.AccessDeniedPath = new PathString("/acesso-negado");
+        //o.AccessDeniedPath = new PathString("/acesso-negado");
     });
 
 builder.Services.AddSession();
@@ -52,7 +52,7 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddRazorPages()
     .AddSessionStateTempDataProvider();
 
-builder.Services.AddSingleton<IHostedService, RoleWorker>();
+builder.Services.AddHostedService<RoleWorker>();
 
 var app = builder.Build();
 

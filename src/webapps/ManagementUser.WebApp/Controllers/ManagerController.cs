@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ManagementUser.WebApp.Controllers;
 
-[Route("manager")]
+[Authorize(Roles = "Admin")]
+[Route("Manager")]
 public class ManagerController : Controller
 {
     private readonly UserManager<IdentityUser<Guid>> _userManager;
@@ -15,13 +15,14 @@ public class ManagerController : Controller
         _userManager = userManager;
     }
 
-    public async Task<IActionResult> Index()
+    [Authorize(Roles = "Admin")]
+    [HttpGet("index")]
+    public IActionResult Index()
     {
-        var users = await _userManager.Users.ToListAsync();
-        return View("Index", users);
+        var users = _userManager.Users.ToList();
+        return View(users);
     }
 
-    [Authorize(Roles = "UserAdmin")]
     [HttpGet("edit/{id}")]
     public async Task<IActionResult> Edit(Guid id)
     {
@@ -30,21 +31,14 @@ public class ManagerController : Controller
         {
             return NotFound();
         }
-
-        return View("Edit", user);
+        return View(user);
     }
 
-    [Authorize(Roles = "UserAdmin")]
-    [HttpPost("edit")]
+    [HttpPost("edit/{id}")]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit([FromForm] IdentityUser<Guid> model)
+    public async Task<IActionResult> Edit(Guid id, [FromForm] IdentityUser<Guid> model)
     {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest("Dados inválidos.");
-        }
-
-        var user = await _userManager.FindByIdAsync(model.Id.ToString());
+        var user = await _userManager.FindByIdAsync(id.ToString());
         if (user == null)
         {
             return NotFound();
@@ -60,40 +54,18 @@ public class ManagerController : Controller
         }
 
         ModelState.AddModelError(string.Empty, "Erro ao atualizar o usuário.");
-        return View("Edit", model);
+        return View(user);
     }
 
-    [Authorize(Roles = "UserAdmin")]
-    [HttpGet("delete/{id}")]
+    [HttpPost("delete/{id}")]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(Guid id)
     {
         var user = await _userManager.FindByIdAsync(id.ToString());
-        if (user == null)
+        if (user != null)
         {
-            return NotFound();
+            await _userManager.DeleteAsync(user);
         }
-
-        return View("Delete", user);
-    }
-
-    [Authorize(Roles = "UserAdmin")]
-    [HttpPost("delete/{id}")]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(Guid id) 
-    {
-        var user = await _userManager.FindByIdAsync(id.ToString());
-        if (user == null)
-        {
-            return NotFound();
-        }
-
-        var result = await _userManager.DeleteAsync(user);
-        if (result.Succeeded)
-        {
-            return RedirectToAction("Index");
-        }
-
-        ModelState.AddModelError(string.Empty, "Erro ao excluir o usuário.");
-        return View("Delete", user);
+        return RedirectToAction("Index");
     }
 }

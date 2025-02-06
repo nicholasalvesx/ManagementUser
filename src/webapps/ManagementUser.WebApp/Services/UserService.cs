@@ -22,18 +22,4 @@ public class UserService : IUserService
             Email = user.Email
         }).ToList();
     }
-    
-    public async Task<bool> EditUserAsync(User model)
-    {
-        var user = await _userManager.FindByIdAsync(model.Id.ToString());
-        if (user == null)
-        {
-            return false;
-        }
-        user.Email = model.Email;
-        user.UserName = model.UserName;
-
-        var result = await _userManager.UpdateAsync(user);
-        return result.Succeeded;
-    }
 }
