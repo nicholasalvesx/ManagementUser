@@ -40,7 +40,8 @@ builder.Services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.Ap
     });
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(o => {
+    .AddCookie(o =>
+    {
         o.LoginPath = new PathString("/auth/login");
         //o.AccessDeniedPath = new PathString("/acesso-negado");
     });
@@ -64,44 +65,43 @@ if (!app.Environment.IsDevelopment())
 else
 {
     app.UseDeveloperExceptionPage();
-
-    //app.UseHttpsRedirection();
-    app.UseStaticFiles();
-
-    app.UseSession();
-
-    app.UseRouting();
-
-    app.UseAuthentication();
-    app.UseAuthorization();
-
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapGet("/", context =>
-        {
-            context.Response.Redirect("/auth/register");
-            return Task.CompletedTask;
-        });
-
-        endpoints.MapControllerRoute(
-            name: "default",
-            pattern: "{controller=Auth}/{action=Register}/{id?}");
-
-        endpoints.MapControllerRoute(
-            name: "auth",
-            pattern: "auth/{action=Login}",
-            defaults: new { controller = "Auth" });
-
-        endpoints.MapControllerRoute(
-            name: "manager",
-            pattern: "manager/{action=index}",
-            defaults: new { controller = "Manager" });
-
-        endpoints.MapRazorPages();
-    });
-    
-    app.MapDefaultControllerRoute();
-
-    app.MapRazorPages();
-    app.Run();
 }
+
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseSession();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGet("/", context =>
+    {
+        context.Response.Redirect("/auth/register");
+        return Task.CompletedTask;
+    });
+
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Auth}/{action=Register}/{id?}");
+
+    endpoints.MapControllerRoute(
+        name: "auth",
+        pattern: "auth/{action=Login}",
+        defaults: new { controller = "Auth" });
+
+    endpoints.MapControllerRoute(
+        name: "manager",
+        pattern: "manager/{action=index}",
+        defaults: new { controller = "Manager" });
+
+    endpoints.MapRazorPages();
+});
+
+app.MapDefaultControllerRoute();
+app.MapRazorPages();
+
+app.Run();
