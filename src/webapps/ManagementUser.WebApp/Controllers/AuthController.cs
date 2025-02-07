@@ -19,10 +19,6 @@ public class AuthController : Controller
     [HttpGet("login")]
     public IActionResult Login()
     {
-        if (User.Identity != null && User.Identity.IsAuthenticated)
-        {
-            return RedirectToAction("Index", "Home");
-        }
         return View();
     }
    
@@ -54,10 +50,6 @@ public class AuthController : Controller
     [HttpGet("register")]
     public IActionResult Register()
     {
-        if (User.Identity != null && User.Identity.IsAuthenticated)
-        {
-            return RedirectToAction("Index", "Home");
-        }
         return View();
     }
 

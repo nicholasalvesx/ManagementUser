@@ -33,6 +33,7 @@ public class HomeController : Controller
             _logger.LogError(ex, "Erro ao carregar os usuários.");
             return RedirectToAction(nameof(Error));
         }
+  
     }
     [AllowAnonymous]
     [HttpGet("Error")]
