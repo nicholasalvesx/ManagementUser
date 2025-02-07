@@ -48,8 +48,9 @@ public class AuthController : Controller
     }
 
     [HttpGet("register")]
-    public IActionResult Register()
+    public async Task<IActionResult> Register()
     {
+        await _signInManager.SignOutAsync();
         return View();
     }
 

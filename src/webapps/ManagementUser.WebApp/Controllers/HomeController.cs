@@ -8,29 +8,21 @@ using Microsoft.AspNetCore.Authorization;
 namespace ManagementUser.WebApp.Controllers;
 
 [Route("Home")]
-public class HomeController : Controller
+public class HomeController(IdentityAppDbContext context, ILogger<HomeController> logger)
+    : Controller
 {
-    private readonly IdentityAppDbContext _context;
-    private readonly ILogger<HomeController> _logger;
-   
-    public HomeController(IdentityAppDbContext context, ILogger<HomeController> logger)
-    {
-        _context = context;
-        _logger = logger;
-    }
-    
     [Authorize]
     [HttpGet("Index")]
     public async Task<IActionResult> Index()
     {
         try
         {
-            var users = await _context.Users.AsNoTracking().ToListAsync();
+            var users = await context.Users.AsNoTracking().ToListAsync();
             return View(users);
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Erro ao carregar os usuários.");
+            logger.LogError(ex, "Erro ao carregar os usuários.");
             return RedirectToAction(nameof(Error));
         }
   
