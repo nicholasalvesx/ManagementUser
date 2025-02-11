@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Gerenciamento de Usuários";
     Layout = "_Layout";
+    var displayUsers = Model.Where(u => u.UserName != "Admin").ToList();
 }
 
 <div class="d-flex" id="wrapper">
@@ -25,7 +26,7 @@
         <h1 class="display-4 text-center">@ViewData["Title"]</h1>
         <p class="text-center">Veja a lista de usuários cadastrados no sistema.</p>
 
-        @if (Model != null && Model.Any())
+        @if(displayUsers.Any())
         {
             <div class="table-responsive">
                 <table class="table table-hover mt-4">
@@ -37,9 +38,9 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach (var user in Model)
+                    @foreach (var user in displayUsers)
                     {
-                        <tr class="@(user.UserName == "Admin" ? "d-none" : "")">
+                        <tr>
                             <td>@user.Id</td>
                             <td>@user.UserName</td>
                             <td>@user.Email</td>
@@ -53,8 +54,7 @@
         {
             <p class="text-center text-muted mt-4">Nenhum usuário encontrado.</p>
         }
-        
-        <form asp-controller="Auth" asp-action="Logout"  method="post">
+        <form asp-controller="Auth" asp-action="Logout" method="post">
             <button id="logoutSubmit" type="submit" class="btn-button">Logout</button>
         </form>
         
