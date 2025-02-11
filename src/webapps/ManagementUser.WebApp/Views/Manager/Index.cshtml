@@ -5,53 +5,87 @@
     Layout = "_Layout";
 }
 
-@if (User.IsInRole("Admin"))
-{
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">@ViewData["Title"]</h1>
 
-        <div class="card shadow-lg">
-            <div class="card-header bg-primary text-white">
-                <h4 class="mb-0">Lista de Usuários</h4>
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-primary">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome de Usuário</th>
+                    <th>Email</th>
+                    <th class="text-center">Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td class="text-center">
+                            <a asp-controller="Manager" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-warning me-2">Editar</a>
+                            
+                            <button type="button"
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                    data-id="@user.Id"
+                                    data-username="@user.UserName">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p class="text-muted text-center">Nenhum usuário encontrado.</p>
+    }
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirmar Exclusão</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
-            <div class="card-body">
-                @if (Model != null && Model.Any())
-                {
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-hover">
-                            <thead class="table-primary">
-                            <tr>
-                                <th>ID</th>
-                                <th>Nome de Usuário</th>
-                                <th>Email</th>
-                                <th class="text-center">Ações</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach (var user in Model)
-                            {
-                                <tr>
-                                    <td>@user.Id</td>
-                                    <td>@user.UserName</td>
-                                    <td>@user.Email</td>
-                                    <td class="text-center">
-                                        <a asp-controller="Manager" asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-warning me-2">Editar</a>
-                                        <form asp-controller="Manager" asp-action="Delete" asp-route-id="@user.Id" method="post" class="d-inline">
-                                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            }
-                            </tbody>
-                        </table>
-                    </div>
-
-                }
-                else
-                {
-                    <p class="text-muted text-center">Nenhum usuário encontrado.</p>
-                }
+            <div class="modal-body">
+                <p>Tem certeza que deseja excluir o usuário <strong id="usernameToDelete"></strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form asp-controller="Manager" asp-action="Delete" asp-route-id="@User" method="post" class="d-inline">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Id" id="deleteUserId" value=""/>
+                    <button type="submit" class="btn btn-danger" onclick="return confirm">Confirmar Exclusão</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
+@section Scripts {
+    <script>
+  
+        var deleteModal = document.getElementById('deleteModal');
+        deleteModal.addEventListener('show.bs.modal', function (event) {
+         
+            var button = event.relatedTarget;
+            var userId = button.getAttribute('data-id');
+            var userName = button.getAttribute('data-username');
+            var modalUsername = deleteModal.querySelector('#usernameToDelete');
+            var modalUserId = deleteModal.querySelector('#deleteUserId');
+            modalUsername.textContent = userName;
+            modalUserId.value = userId;
+        });
+    </script>
 }
