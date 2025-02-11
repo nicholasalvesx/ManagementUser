@@ -62,7 +62,7 @@ public class AuthController : Controller
 
         var user = new IdentityUser<Guid>
         {
-            UserName = model.UserName.Split('@')[0],
+            UserName = model.UserName?.Split('@')[0],
             Email = model.Email
         };
 
