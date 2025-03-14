@@ -66,21 +66,19 @@ public class AuthController : Controller
             Email = model.Email
         };
 
-        if (model.Password != null)
+        if (model.Password == null) return View(model);
+        var result = await _userManager.CreateAsync(user, model.Password);
+
+        if (result.Succeeded)
         {
-            var result = await _userManager.CreateAsync(user, model.Password);
-
-            if (result.Succeeded)
-            {
-                await _userManager.AddToRoleAsync(user, "User");
+            await _userManager.AddToRoleAsync(user, "User");
                 
-                await _signInManager.SignInAsync(user, isPersistent: false);
-                return RedirectToAction("Login", "Auth"); 
-            }
-
-            foreach (var error in result.Errors)
-                ModelState.AddModelError(string.Empty, error.Description);
+            await _signInManager.SignInAsync(user, isPersistent: false);
+            return RedirectToAction("Login", "Auth"); 
         }
+
+        foreach (var error in result.Errors)
+            ModelState.AddModelError(string.Empty, error.Description);
 
         return View(model);
     }

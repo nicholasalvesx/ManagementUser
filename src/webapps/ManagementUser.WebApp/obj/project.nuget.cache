@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9YQATZ/3wLo=",
+  "dgSpecHash": "cNOgwxlENuo=",
   "success": true,
-  "projectFilePath": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/ManagementUser.WebApp.csproj",
+  "projectFilePath": "/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/ManagementUser.WebApp.csproj",
   "expectedPackageFiles": [
     "/home/nicholas/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/nicholas/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

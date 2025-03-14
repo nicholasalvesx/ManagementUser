@@ -8430,11 +8430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/ManagementUser.WebApp.csproj",
+      "projectUniqueName": "/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/ManagementUser.WebApp.csproj",
       "projectName": "ManagementUser.WebApp",
-      "projectPath": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/ManagementUser.WebApp.csproj",
+      "projectPath": "/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/ManagementUser.WebApp.csproj",
       "packagesPath": "/home/nicholas/.nuget/packages/",
-      "outputPath": "/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/obj/",
+      "outputPath": "/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nicholas/.nuget/NuGet/NuGet.Config"
@@ -8443,7 +8443,6 @@
         "net9.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8462,7 +8461,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -8524,7 +8523,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

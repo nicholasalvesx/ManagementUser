@@ -17,69 +17,69 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ManagementUser.WebApp
 build_property.RootNamespace = ManagementUser.WebApp
-build_property.ProjectDir = /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/
+build_property.ProjectDir = /home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp
+build_property.MSBuildProjectDirectory = /home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Auth/Login.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Auth/Register.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Home/Index.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Home/Privacy.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Create.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Delete.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Edit.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Index.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Manager/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/Error.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/_Layout.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/_LoginPartial.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/_ViewImports.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/nicholas/Documentos/workspace/ManagementUser/src/webapps/ManagementUser.WebApp/Views/_ViewStart.cshtml]
+[/home/nicholas/Documentos/workspace/MaUser /ManagementUser/src/webapps/ManagementUser.WebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
